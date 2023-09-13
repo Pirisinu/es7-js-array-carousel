@@ -16,12 +16,14 @@ const boxImg = document.querySelector('.box-img');
 const btnTop = document.querySelector('.top');
 const btnDown = document.querySelector('.down');
 
+//Serve per dichiarare l'inizio
+let counter = 0;
 
 
 //2.Creare un arrey contenete le immagini
 //Arrey
 const listImg = [
-  '<img src="img/01.webp" class="my_img hide">' +
+  '<img src="img/01.webp" class="my_img">' +
   '<img src="img/02.webp" class="my_img hide">' +
   '<img src="img/03.webp" class="my_img hide">' +
   '<img src="img/04.webp" class="my_img hide">' +
@@ -35,6 +37,27 @@ for (let i = 0; i < listImg.length; i++) {
 
 //5.
 const imgCollection = document.getElementsByClassName('my_img');
-console.log(imgCollection)
+console.log(imgCollection);
+
+btnTop.addEventListener('click', function (){
+
+  imgCollection[counter].classList.add('hide');
+
+  counter++;
+
+  imgCollection[counter].classList.remove('hide');
+
+});
+
+btnTop.addEventListener('click', function (){
+
+  imgCollection[counter].classList.add('hide');
+
+  counter--;
+
+  imgCollection[counter].classList.remove('hide');
+
+});
+
 
 
