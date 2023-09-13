@@ -14,6 +14,7 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
 
   1. Richiamare i vari elementi
   2. Creo un arrey con le immagini da inserire nell'html
+  3. 
 
 
      
