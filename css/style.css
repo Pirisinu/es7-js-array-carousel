@@ -27,7 +27,6 @@
   transform: translateX(-50%);
   left: 50%;
   text-align: center;
-
 }
 .btn-arrow:hover{
   background-color: white;
@@ -39,3 +38,4 @@
 .btn-arrow.down{
   bottom: 10px;
 }
+/* aaa */
