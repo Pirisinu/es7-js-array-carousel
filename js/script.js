@@ -22,13 +22,15 @@ const btnDown = document.querySelector('.down');
 //2.Creare un arrey contenete le immagini
 //Arrey
 const listImg = [
-  '<img src="img/01.webp" >' +
+  '<img src="img/01.webp" class="hide">' +
   '<img src="img/02.webp" class="hide">' +
   '<img src="img/03.webp" class="hide">' +
   '<img src="img/04.webp" class="hide">' +
   '<img src="img/05.webp" class="hide">' 
 ]
-/* boxImg.innerHTML += listImg[0].className('hide'); */
+
+
+
 boxImg.innerHTML += listImg;
 
 
