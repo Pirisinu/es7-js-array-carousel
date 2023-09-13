@@ -13,8 +13,7 @@ SVOLGIMENTO
 //1.Richiamare i vari elementi
 //elementi
 const boxImg = document.querySelector('.box-img');
-const btnTop = document.querySelector('.top');
-const btnDown = document.querySelector('.down');
+
 
 //Serve per dichiarare l'inizio
 let counter = 0;
@@ -23,10 +22,10 @@ let counter = 0;
 //2.Creare un arrey contenete le immagini
 //Arrey
 const listImg = [
-  '<img src="img/01.webp" class="my_img">' +
-  '<img src="img/02.webp" class="my_img hide">' +
-  '<img src="img/03.webp" class="my_img hide">' +
-  '<img src="img/04.webp" class="my_img hide">' +
+  '<img src="img/01.webp" class="my_img">',
+  '<img src="img/02.webp" class="my_img hide">',
+  '<img src="img/03.webp" class="my_img hide">',
+  '<img src="img/04.webp" class="my_img hide">',
   '<img src="img/05.webp" class="my_img hide">' 
 ]
 //4.
@@ -35,6 +34,9 @@ for (let i = 0; i < listImg.length; i++) {
   boxImg.innerHTML += img;
 }
 
+const btnTop = document.querySelector('.top');
+const btnDown = document.querySelector('.down');
+btnDown.classList.add('hide');
 //5.
 const imgCollection = document.getElementsByClassName('my_img');
 console.log(imgCollection);
@@ -47,9 +49,10 @@ btnTop.addEventListener('click', function (){
 
   imgCollection[counter].classList.remove('hide');
 
+
 });
 
-btnTop.addEventListener('click', function (){
+btnDown.addEventListener('click', function (){
 
   imgCollection[counter].classList.add('hide');
 
@@ -57,6 +60,8 @@ btnTop.addEventListener('click', function (){
 
   imgCollection[counter].classList.remove('hide');
 
+
+  
 });
 
 
