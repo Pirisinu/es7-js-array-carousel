@@ -8,7 +8,10 @@ SVOLGIMENTO
   5. Raggruppo gli elementi(getElementsByClassName('')) per assegnare classi
   6. Creo Un eventListner per il pulsante superiore collegato ai bottoni per inserire un ciclo 
   7. creo un ciclo che mi va a far ruotare le img grazie al(remove/add) class:hide.
-
+  8. Nascondo il bottone inferiore
+  9. Creo un IF che mi faccia sparire il bottone superiore (data la lunghezza del container immagini)
+  10. vado a creare un altro if che gestisca il bottone inferiore
+  
 */
 //1.Richiamare i vari elementi
 //elementi
@@ -44,12 +47,15 @@ console.log(imgCollection);
 btnTop.addEventListener('click', function (){
 
   imgCollection[counter].classList.add('hide');
+  btnDown.classList.remove('hide');
 
   counter++;
-
+  
   imgCollection[counter].classList.remove('hide');
 
-
+  if(counter == imgCollection.length -1) {
+    btnTop.classList.add('hide');
+  }
 });
 
 btnDown.addEventListener('click', function (){
@@ -60,7 +66,9 @@ btnDown.addEventListener('click', function (){
 
   imgCollection[counter].classList.remove('hide');
 
+  btnTop.classList.remove('hide');
 
+  if(counter == 0) btnDown.classList.add('hide');
   
 });
 

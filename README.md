@@ -19,6 +19,10 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
   5. Raggruppo gli elementi(getElementsByClassName('')) per assegnare classi
   6. Creo Un eventListner per il pulsante superiore collegato ai bottoni per inserire un ciclo 
   7. creo un ciclo che mi va a far ruotare le img grazie al(remove/add) class:hide.
+  8. Nascondo il bottone inferiore
+  9. Creo un IF che mi faccia sparire il bottone superiore (data la lunghezza del container immagini)
+  10. vado a creare un altro if che gestisca il bottone inferiore
+
   
 
 
