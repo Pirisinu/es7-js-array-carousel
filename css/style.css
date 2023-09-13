@@ -28,6 +28,10 @@
   left: 50%;
   text-align: center;
 }
+.btn-arrow:hover{
+  background-color: white;
+  color: black;
+}
 .btn-arrow.top{
   top: 10px;
 }

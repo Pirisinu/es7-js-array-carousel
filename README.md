@@ -7,12 +7,12 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
   1. Creare un container
   2. Inserire l'immagine centrata nel container 
 
-<!-- - ***Svolgimento parte logica***
-  1. Eliminare il markup statico dalla pagina
+- ***Svolgimento parte logica***
+  - Eliminare il markup statico dalla pagina
 
-  2. DA QUI LAVORO SU JS 
+  - DA QUI LAVORO SU JS 
 
-  2. Creo un arrey con le immagini da inserire nell'html
- -->
+  1. Creo un arrey con le immagini da inserire nell'html
+
 
      
