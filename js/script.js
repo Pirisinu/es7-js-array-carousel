@@ -29,5 +29,5 @@ const listImg = [
   '<img src="img/05.webp">',
 ]
 console.log(listImg);
-/* boxImg.innerHTML = listImg[0]; */
+boxImg.innerHTML = listImg[0] + btnTop + btnDown;
 
